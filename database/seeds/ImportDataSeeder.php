@@ -13,6 +13,8 @@ class ImportDataSeeder extends Seeder
      */
     public function run()
     {
+        ini_set('memory_limit', -1);
+
         Excel::import(new EntityFederalImport(), base_path('app/Data/CPdescarga.csv'));
     }
 }
