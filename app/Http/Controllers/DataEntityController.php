@@ -14,8 +14,7 @@ class DataEntityController extends Controller
             $data = DataEntity::where('zip_code', $zipCode)->get();
             return response()->json(new DataEntityResource($data));
         } catch (\Throwable $th) {
-            return $th;
-            return response()->view('errors.404', [], 404);
+            return response()->json(["Error" => "Recurso no encontrado"], 404);
         }
     }
 }
