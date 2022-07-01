@@ -23,10 +23,10 @@ De antemano muchas gracias por permitirme realizar este reto
 ## La forma en la que abordé el reto, fué la siguiente:
 
 
-1.- Analicé el formato del endpoint de ejemplo y traté de aplicar normalización de bases de datos, pero no se podía, ya que en el archivo había muchas ciudades sin nombre.
+1.- Analicé el formato del endpoint de ejemplo y traté de aplicar normalización de bases de datos, pero no se podía, ya que en el archivo había muchas ciudades sin nombre y sin un identificador único, por lo cual descarté la normalización y opté por crear una sola tabla con un índice de búsqueda.
 
 
-2.- Descargué el archivo txt, lo abrí en excel, completé algunos zip_code con ceros a la izquierda para que llegara al estandar de 5 dígitos, lo exporté como csv y lo almacené dentro del proyecto en: App/Data/CPdescarga.csv
+2.- Descargué el archivo txt con la información de los estados, lo abrí en excel, completé algunos zip_code con ceros a la izquierda para que llegara al estandar de 5 dígitos, lo exporté como csv y lo almacené dentro del proyecto en: App/Data/CPdescarga.csv
 
 
 3.- Luego instalé laravel maatwebsite excel para procesar el archivo csv
