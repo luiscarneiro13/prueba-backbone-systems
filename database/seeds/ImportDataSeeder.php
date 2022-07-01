@@ -13,6 +13,6 @@ class ImportDataSeeder extends Seeder
      */
     public function run()
     {
-        Excel::import(new EntityFederalImport(), base_path('app/Data/CPDescarga.csv'));
+        Excel::import(new EntityFederalImport(), base_path('app/Data/CPdescarga.csv'));
     }
 }
